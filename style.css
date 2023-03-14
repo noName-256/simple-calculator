@@ -39,5 +39,16 @@ button
 #history
 {
     flex: 1 1 0;
-
+    justify-content: end;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+#history > *
+{
+    height: 25px;
+    border: 1.5px solid #3e3e42;
+}
+#history > *:hover
+{
+    border: 1.5px solid rgb(255, 60, 0);
 }
