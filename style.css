@@ -1,10 +1,23 @@
+body,
+#calculator
+{
+    background-color: #0f0e0e;
+}
+body
+{
+    box-sizing: border-box;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #calculator
 {
     margin: auto;
-    margin-top: 10%;
     border: 2px solid grey;
     padding: 8px;
-    width: 400px;
+    width: 300px;
     height: 400px;
 }
 .flexbox-column
