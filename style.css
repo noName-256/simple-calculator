@@ -4,6 +4,7 @@ body
     justify-content: center;
     align-items: center;
     padding: 7%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .flexbox-column
 {
@@ -62,3 +63,20 @@ button:hover {background-color: #E9ECEF;}
 #clear:hover{background-color: #C20422;}
 #backspace{background-color: #F4DA22}
 #backspace:hover{background-color: #D6BF1E;}
+
+#operators > *,
+#result
+{
+    font-size: 2rem;
+    font-weight: 300;
+}
+#backspace
+{
+    font-size: 2rem;
+    font-weight: 200;
+    padding-bottom: 8px;/* this is for aligning the character a bit higher since by default it is pretty low */
+}
+#clear
+{
+    font-size: 1rem;
+}
