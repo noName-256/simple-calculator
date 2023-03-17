@@ -24,13 +24,16 @@ body
     padding: 8px;
     border: 2px solid #6C757D;
     background-color: #DEE2E6;
+    border-radius: 1px;
 }
 #result-display
 {
-    height: 100px;
+    height: 110px;
     width: auto;
-    border: 1px solid #343A40;
+    border: 1px solid #212529;
     margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: -2px -2px #6C757D;
 }
 #operations {flex: 1 1 0}
 #operations > * {flex: 1 1 0}
@@ -46,3 +49,16 @@ body
 #numpad, #operators {flex-wrap: wrap;}
 #numpad > * {width: 26%} /* guarantees 3 elements per row */
 #operators > * {width: 34%} /* guarantees 2 elements per row */
+
+button
+{
+    border: 1px solid#212529;
+    border-radius: 6px;
+    box-shadow: -1px -1px #6C757D;
+    background-color: #F8F9FA;
+}
+button:hover {background-color: #E9ECEF;}
+#clear {background-color: #DD0426;}
+#clear:hover{background-color: #C20422;}
+#backspace{background-color: #F4DA22}
+#backspace:hover{background-color: #D6BF1E;}
