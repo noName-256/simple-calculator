@@ -43,16 +43,6 @@ body
 #result {flex: 5 1 0}
 /* note that flex: 1 1 0 fills all space equally while 1 1 auto also fills it equally while preserving elements per row */
 
-#numpad,
-#operators
-{
-    flex-wrap: wrap;
-}
-#numpad > *
-{
-    width: 26%/* guarantees 3 elements per row */
-}
-#operators > *
-{
-    width: 34%/* guarantees 2 elements per row */
-}
+#numpad, #operators {flex-wrap: wrap;}
+#numpad > * {width: 26%} /* guarantees 3 elements per row */
+#operators > * {width: 34%} /* guarantees 2 elements per row */
