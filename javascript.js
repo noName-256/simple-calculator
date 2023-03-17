@@ -125,6 +125,7 @@ document.addEventListener("keydown", (event)=>{
             useOperator("\u00D7")
             break;
         case "/":
+            event.preventDefault();
             useOperator("\u00F7")
             break;
         case "1":
