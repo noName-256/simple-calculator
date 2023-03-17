@@ -111,3 +111,63 @@ document.querySelectorAll("#operators > *").forEach(element=>{element.addEventLi
 document.querySelector("#clear").addEventListener("click", clearAll);
 document.querySelector("#backspace").addEventListener("click", eraseCharacter);
 document.querySelector("#equals").addEventListener("click", calcResult);
+
+document.addEventListener("keydown", (event)=>{
+    switch(event.key)
+    {
+        case "+":
+            useOperator("+")
+            break;
+        case "-":
+            useOperator("-")
+            break;
+        case "*":
+            useOperator("\u00D7")
+            break;
+        case "/":
+            useOperator("\u00F7")
+            break;
+        case "1":
+            typeN("1")
+            break;
+        case "2":
+            typeN("2")
+            break;
+        case "3":
+            typeN("3")
+            break;
+        case "4":
+            typeN("4")
+            break;
+        case "5":
+            typeN("5")
+            break;
+        case "6":
+            typeN("6")
+            break;
+        case "7":
+            typeN("7")
+            break;
+        case "8":
+            typeN("8")
+            break;
+        case "9":
+            typeN("9")
+            break;
+        case "0":
+            typeN("0")
+            break;
+        case ".":
+            typeN(".")
+            break;
+        case "Escape":
+            clearAll();
+            break;        
+        case "Backspace":
+            eraseCharacter();
+            break; 
+        case "Enter":
+            calcResult();
+            break;
+    }
+})
