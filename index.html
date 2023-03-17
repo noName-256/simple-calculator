@@ -9,12 +9,39 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div id="calculator">
+    <div id="calculator" class="flexbox-column">
         <div id="result-display">
 
         </div>
-        <div id="operations">
-            
+        <div id="operations" class="flexbox-column">
+            <div id="upper" class="flexbox-row">
+                <button id="clear">Clear</button>
+                <button id="backspace">&#9003</button>
+            </div>
+            <div id="middle" class="flexbox-row">
+                <div id="numpad" class="flexbox-row">
+                    <button id="7">7</button>
+                    <button id="8">8</button>
+                    <button id="9">9</button>
+                    <button id="4">4</button>
+                    <button id="5">5</button>
+                    <button id="6">6</button>
+                    <button id="1">1</button>
+                    <button id="2">2</button>
+                    <button id="3">3</button>
+                </div>
+                <div id="operators" class="flexbox-row">
+                    <button id="plus">+</button>
+                    <button id="minus">-</button>
+                    <button id="multiply">&#215</button>
+                    <button id="divide">&#247</button>
+                </div>
+            </div>
+            <div id="lower" class="flexbox-row">
+                <button id="0">0</button>
+                <button id="period">.</button>
+                <button id="result">=</button>
+            </div>
         </div>
     </div>
 </body>
