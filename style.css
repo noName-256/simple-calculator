@@ -45,7 +45,7 @@ body
 #numpad > * {flex: 1 1 auto}
 #operators > * {flex: 1 1 auto}
 #lower > * {flex: 1 1 0}
-#result {flex: 5 1 0}
+#equals {flex: 5 1 0}
 /* note that flex: 1 1 0 fills all space equally while 1 1 auto also fills it equally while preserving elements per row */
 
 #numpad, #operators {flex-wrap: wrap;}
@@ -66,7 +66,7 @@ button:hover {background-color: #E9ECEF;}
 #backspace:hover{background-color: #D6BF1E;}
 
 #operators > *,
-#result
+#equals
 {
     font-size: 2rem;
     font-weight: 300;
@@ -80,4 +80,21 @@ button:hover {background-color: #E9ECEF;}
 #clear
 {
     font-size: 1rem;
+}
+
+#result-display
+{
+    justify-content: end;
+    align-items: end;
+}
+#memory
+{
+    font-size: 1rem;
+    margin-right: 0.7rem;
+}
+#result
+{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 1rem;
 }
